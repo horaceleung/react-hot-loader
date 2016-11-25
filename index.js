@@ -29,7 +29,7 @@ module.exports = function (source, map) {
       '(function () {',
         'var ReactHotAPI = require(' + JSON.stringify(require.resolve('react-hot-api')) + '),',
             'RootInstanceProvider = require(' + JSON.stringify(require.resolve('./RootInstanceProvider')) + '),',
-            'ReactMount = require("react/lib/ReactMount"),',
+            'ReactMount = require("react-dom/lib/ReactMount"),',
             'React = require("react");',
 
         'module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () {',
